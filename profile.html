@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+
+        <script>
+            var myStatus = "in";
+            var myName = "profile";
+        </script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+        <script src="resources/js/common.js"></script>
+        <script src="resources/js/profile.js"></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <div id="myHeader"></div>
+
+            <div class="row text-center">
+                <h2 style="margin-bottom: 3%;">User Profile</h2>
+                <form>
+                    <div class="form-group row">
+                        <label for="profMail" class="col-sm-2 col-form-label">Email : </label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="profMail">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="profName" class="col-sm-2 col-form-label">Name : </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="profName">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="profNum" class="col-sm-2 col-form-label">Phone Number : </label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="profNum">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <button type="button" class="btn btn-primary btn-lg" id="saveButton" onclick="saveData()">Save</button>
+                        <button type="button" class="btn btn-primary btn-lg" id="editButton" onclick="editData()">Edit</button>
+                    </div>
+                </form>
+            </div>
+
+            
+
+            <div id="myFooter" class="text-center"></div>    
+
+
+        </div>
+        <script>checkSession(); loadHeader(); fillData(); loadFooter();</script>
+    </body>
+</html>

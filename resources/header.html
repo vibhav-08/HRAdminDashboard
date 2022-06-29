@@ -1,0 +1,31 @@
+<script src="resources/js/common.js"></script>
+
+<header>
+    <div class="row page-header">
+        <a href="profile.html">
+            <div id="myUser" style="margin-left: 80%;"></div>
+        </a>
+    </div>
+
+    <nav class="navbar navbar-lg">
+        <div class="topnav-right">
+            <a class="nav-link" href="home.html" id="myHome">Home</a>  
+            <a class="nav-link" href="profile.html" id="myProfile">Profile</a>   
+            <a class="nav-link" href="form.html" id="myForm">Add Employee</a>  
+            <a class="nav-link" href="change.html" id="myChange">Change Password</a>
+            <a class="nav-link" onclick="deleteSession()" id="myLogout">Logout</a>
+        </div> 
+    </nav>
+</header>
+
+
+<script>
+    var mail = localStorage.getItem("mail");
+    document.getElementById("myUser").innerText = mail;
+</script>
+
+<!--<div class="row">
+    <div class="dashboard">
+
+    </div>
+</div>-->

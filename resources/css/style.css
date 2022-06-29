@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 Jun, 2022, 4:05:49 PM
+    Author     : coder2
+*/
+
+
+
+.text-center {
+    text-align: center;
+}
+
+.topnav-right {
+    float: right;
+}
+
+.header-all {
+    margin: 5% 0;
+}
+
+
+
+#myHeader {
+    margin: 0 0 5% 0;
+}
+
+#myHome, #myProfile, #myChange, #myForm, #myLogout, #myRegister, #myForgot, #myLogin {
+    text-decoration: none;
+    color: white;
+    background-color: blue; 
+    padding: 1.5rem;
+    border-radius: 5%;
+    border-color: white;
+}
+
+
+#myHome.active, #myProfile.active, #myChange.active, #myForm.active, #myLogout.active {
+    background-color: white;
+    color: blue;
+    border-color: blue;
+}
+
+#myFooter {
+    position: absolute;
+    bottom: 0;
+    width: 1200px;
+    height: 2.5rem;
+}
